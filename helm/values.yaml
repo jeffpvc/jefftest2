@@ -3,11 +3,11 @@
 # Declare variables to be passed into your templates.
 replicaCount: 1
 image:
-  repository: nginx
-  tag: stable
+  repository: docker.io/jwalker2020/jefftest2
+  tag: latest
   pullPolicy: IfNotPresent
 service:
-  name: sage
+  name: jefftest2
   type: ClusterIP
   externalPort: 80
   internalPort: 5000
